@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+* {
+	box-sizing: border-box;
+   }
+.header, footer {
+    background-color: #d7e804;
+    
+}
+header, article, aside, footer,nav {
+   padding: 15px;
+   }
+header {
+    height: 150px;
+}
+aside {
+    background-color:wheat;
+    min-height: 60vh;
+}
+nav {
+    background-color: rgb(193, 216, 230);
+    min-height: 60vh;
+}
+article{
+    
+    min-height: 60vh;
+    background-color:whitesmoke;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+}
+.container1 {
+  width: 60%;
+  
+}
+.container2, .container3 {
+ width: 20%;
+}
+ form {
+    background-color:rgb(212, 190, 190);
+    padding: 20px;
+
+}
+
+.inputBox {
+    margin-bottom: 10px;
+    
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: top;
+    margin-top: 10px;
+    margin-left: 15px;
+    column-gap: 40px; 
+    align-items: stretch;
+    
+    
+}
+
+select {
+    padding: 2px 45px;
+}
+.column1 {
+    align-content: stretch;
+}
+input[type="submit"]
+{
+    width: 150px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.box3 {
+    margin-bottom: 10px;
+}
+.box {
+    margin-bottom: 5px;
+}
+.box4 {
+    margin-top: 6px;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h2>Header</h2>
+        </header>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <article>
+                 <h2>Article</h2>
+                 <form>
+                    <div class="row">
+                      <div class="column1">
+                            <div class="inputBox">
+                                <label for="name">Name:</label>
+                                <input id="name" name="username" type="text"size=25/>
+                            </div>
+                            <div class="inputBox">
+                                <label for="name">Phone:</label>
+                                <input id="name" name="phone" type="text" size=25/>
+                            </div>
+                            <div class="inputBox">
+                                <label for="name">Email:</label>
+                                <input id="name" name="email" type="text" size=25/>
+                            </div>
+                        
+                            <div class="inputBox">
+                                <label for="name">Pickup Date Time:</label>
+                                <input type="date" id="pickupdate" name="pickupdate" />
+                            </div>
+                            <div class="inputBox">    
+                            Pickup Place 
+                                <select name ="dropdown" >
+                                    <option value="Slect One" selected>Select One</option>
+                                </select>
+                            </div>
+                            <div class="inputBox">
+                                Dropoff Place  <input type="text" name="email" size=21/>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="box">
+                                Which vehicle do you repair?
+                            </div>
+                            <div class="box1">
+                                <input type="radio" name ="Van" value="Van"> Van
+                            </div>
+                            <div class="box2">
+                                <input type="radio" name ="Jepney" value="Jepney"> Jepney
+                            </div>
+                            <div class="box3">
+                                <input type="radio" name ="Tricyle" value="Tricyle"> Tricyle
+                            </div>
+                                Extras
+                            <div class="box4">
+                                <input type ="checkbox" name ="Baby Seat" value="on"> Baby Seat
+                            </div>
+                            <div class="box5">
+                                <input type ="checkbox" name ="Whellchair Access" value="on"> Whellchair Access
+                            </div>
+                            <div class="box6">
+                                <input type ="checkbox" name ="Stock Tip" value="on"> Stock Tip
+                            </div>
+                            
+                        </div>
+                         
+                    </div>
+                    <div class="box8">
+                        <center><input type ="submit" name = "submit Booking" value="Submit Booking"/></center>
+                    </div>
+                </form>
+                
+            </article>
+        </div>
+        <div class="container2">
+            <aside>
+                <h2>Aside</h2>
+            </aside>
+        </div>
+        <div class="container3">
+            <nav>
+                <h2>Nav</h2>
+            </nav>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <h2>Footer</h2> 
+        </footer>
+    </div>
+    
+</body>
+</html>

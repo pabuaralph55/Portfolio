@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+body {
+    display:grid;
+    grid-template-areas: 
+    "article aside"
+    "article aside";
+    grid-template-rows: 80px 2fr 80px;
+    grid-template-columns: 30% 1fr 20%;
+    grid-row-gap: 5px;
+    height: 100vh;
+    
+}
+article,aside {
+    padding: 10px;
+    }
+article {
+    grid-area: article;
+    background-color: blue;
+}
+
+aside {
+    grid-area: aside;
+    background-color: whitesmoke;
+}
+
+h1 {
+    padding: 10px;
+    
+}
+
+form .container {
+    display: grid;
+    grid-template-areas:
+    "name email"
+    "skype topic"
+    "message message";
+    
+    
+}
+.add {
+    padding:10px;
+}
+
+.username {
+    padding:10px;
+    
+}
+.userskype {
+    padding:10px;
+}   
+.useremail {
+    padding:10px;
+    
+}
+.usertopic {
+    padding:10px;
+    
+}
+.usermessage {
+    padding:10px;
+}
+.grid-item-1 {
+    color: white;
+}
+input {
+    padding:10px;
+}
+input[type="submit"]
+{
+    width: 705px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: -24px;
+    font-size: 18px;
+}
+@media all and (max-width: 575px) {
+        body {
+            grid-template-areas:  "article" "aside";
+            grid-template-rows: 80px 1fr 200px 1fr 80px;
+            grid-template-columns:1fr;
+        }
+    }
+</style>
+</head>
+<body>
+    <article class="grid-item-1"><h1>Our Contacts</h1>
+        <div class="add">
+            Kamagong St. <br/>
+            8012112121-11 <br/>
+            mail@mail.com
+        </div>
+    </article>
+    <aside class="grid-item-2"> <h1>Send Us Message</h1>
+        <form>
+            <div class="container">
+               <div class="username">
+                    <label for="fname">Name:</label><br/>
+                    <input id="fname" name="frname" type="text" size=44 />
+                </div> 
+                <div class="userskype">
+                    <label for="skype">Skype:</label><br/>
+                    <input id="skype" name="skype" type="text" size=44 />
+                </div>
+                <div class="useremail">
+                    <label for="email">Email Address:</label><br/>
+                    <input id="email" name="email" type="text" size=44/>
+                </div>
+                <div class="usertopic">
+                    <label for="topic">Topic:</label><br/>
+                    <input id="topic" name="topic" type="text" size=44/>
+                </div>
+            </div> 
+            <div class="usermessage">
+                <label for="message">Write your message<br/></label>
+                <textarea rows="5"cols ="95" name="message" ></textarea> 
+            </div>
+            <div class="send">
+                <center><input type ="submit" name = "Send" value="Send"/></center>
+            </div>
+        </form>
+    </aside>
+
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+//variable
+$space: 10px;
+$backcolor:light;
+$border: 2px solid;
+$footer:Arial;
+$fontstock:Arial;
+
+
+body {
+    nav {
+        border: $border;
+        padding:$space;
+        margin:$space;
+        width:800px;
+        
+        ul {
+            position: relative;
+            top: -15px;
+            .li {
+                display: inline-block;
+                padding: $space;
+                
+            } 
+        }
+    }   
+    section {
+        border:$border;
+        width:500px;
+        height: 300px;
+        margin: $space;
+      
+    }
+    aside {
+        border:$border;
+        height: 300px;
+        width:303px;
+        
+    }
+        
+    footer {
+        border: $border;
+        padding:$space;
+        margin:$space;
+        position: relative;
+        right:100px;
+        left: 2px;
+        width: 800px;
+        h1 {
+            padding-left: 280px;
+        }
+    }
+ 
+}
+nav {
+    ul {
+        list-style: none;
+    }
+    li {
+        float:right;
+        margin-right:20px;  
+    }
+    .li {
+        padding: 10px;
+        
+    }
+
+}
+
+body {
+    .column {
+        display: inline-block;
+    }
+    .bottom {
+        display: inline-block;
+    }
+}
+.logo {
+    border: 2px solid;
+    width: 80px;
+    text-align: center;
+}
+@mixin textstyle ($color,$size){
+    color: $color;
+    font-size: $size;
+}
+.sect {
+    @include textstyle(black,3em)
+}
+
+    
+
+
+    
